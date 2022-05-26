@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package kong;
+
+import "google/protobuf/descriptor.proto";
+
+option go_package = "github.com/eva005/protoc-gen-kong;kong";
+
+extend google.protobuf.ServiceOptions {
+  // See `HttpRule`.
+  KongRule kong = 72295998;
+}
+
+message KongRule {
+  string service_url = 1;
+}
