@@ -4,7 +4,7 @@ package kong;
 
 import "google/protobuf/descriptor.proto";
 
-option go_package = "github.com/eva005/protoc-gen-kong;kong";
+option go_package = "github.com/eva005/protoc-gen-kong/kong;kong";
 
 extend google.protobuf.ServiceOptions {
   // See `HttpRule`.
